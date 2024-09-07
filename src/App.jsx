@@ -7,8 +7,7 @@ import About from "./pages/about/about-page";
 import Courses from "./pages/courses/courses-page";
 import Books from "./pages/books/books-page";
 import Shop from "./pages/shop/shop";
-import { AnimatePresence, motion } from "framer-motion"; // <-- motion va AnimatePresence ni import qilish
-
+import { AnimatePresence, motion } from "framer-motion"; 
 function App() {
   const location = useLocation();
 
