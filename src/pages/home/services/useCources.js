@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 export const useCources = () => {
   return useQuery({
     queryKey: ["getCources"],
-    queryFn: () => request.get("/courses").then((res) => res.data),
+    queryFn: () => request.get("/courses/list").then((res) => res.data),
   });
 };
 

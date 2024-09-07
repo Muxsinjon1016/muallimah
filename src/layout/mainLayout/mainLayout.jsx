@@ -7,12 +7,11 @@ export const MainLayout = () => {
   return (
     <>
       {/* Header */}
-      <header className="mb-[80px] lg:mb-[110px]">
+      <header className="mb-[80px] lg:mb-[100px]">
         <Header />
       </header>
-
       {/* Main Content */}
-      <main className="container min-h-screen px-4 py-8 mx-auto lg:px-8">
+      <main className="min-h-screen">
         <Outlet />
       </main>
 
