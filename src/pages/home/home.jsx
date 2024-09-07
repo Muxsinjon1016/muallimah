@@ -1,7 +1,7 @@
 import React from "react";
-import Banner from "./componentes/banner/banner";
-import Amount from "./componentes/amout/amout";
-import Courses from "./componentes/courses/courses";
+import { Banner } from "./components/banner/banner";
+import { Amount } from "./components/amout/amout";
+import { Courses } from "./components/courses/courses";
 
 const Home = () => {
   return (

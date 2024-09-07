@@ -1,9 +1,11 @@
 import React from "react";
 
-export default function Main() {
+export const Banner = () => {
   return (
     <>
       <div className="container"></div>
     </>
   );
-}
+};
+
+export default Banner;
