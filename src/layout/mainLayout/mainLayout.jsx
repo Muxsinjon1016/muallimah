@@ -6,16 +6,12 @@ import { Outlet } from "react-router-dom";
 export const MainLayout = () => {
   return (
     <>
-      {/* Header */}
       <header className="mb-[80px] lg:mb-[100px]">
         <Header />
       </header>
-      {/* Main Content */}
       <main className="min-h-screen">
         <Outlet />
       </main>
-
-      {/* Footer */}
       <footer className="py-4 text-white bg-blue-900">
         <Footer />
       </footer>
