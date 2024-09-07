@@ -55,7 +55,7 @@ const Banner = () => {
             <div className="w-[1100px] ml-auto mr-auto h-auto rounded-[10px] bg-white flex flex-col-reverse items-center justify-between text-center md:flex-row md:text-left p-6">
               <div className='p-[44px]'>
                 <h1 className="text-4xl text-[#ff4756]">{bannerData[index].title}</h1>
-                <p className="w-[499px] md:h-24 h-auto text-base mt-[25px] mb-[25px] text-[#00235a]">
+                <p className="w-[499px] md:h-24 h-auto text-base mt-[26px] mb-[26px] text-[#00235a]">
                   {bannerData[index].text}
                 </p>
                 <div className="flex justify-center md:justify-start items-center w-[182px] relative gap-2.5 px-10 py-2 rounded-md bg-[#00235a] mx-auto md:mx-0">
