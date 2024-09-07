@@ -8,7 +8,6 @@ export const Courses = () => {
   return (
     <>
       <div>
-        <div>top</div>
         {data?.map((item) => {
           return (
             <>
@@ -18,7 +17,6 @@ export const Courses = () => {
             </>
           );
         })}
-        <div>bottom</div>
       </div>
     </>
   );
