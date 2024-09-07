@@ -12,19 +12,34 @@ export const Footer = () => {
             <Link className="text-lg font-medium hover:text-blue-300" to={"/"}>
               Asosiy sahifa
             </Link>
-            <Link className="text-lg font-medium hover:text-blue-300" to={"/blog"}>
+            <Link
+              className="text-lg font-medium hover:text-blue-300"
+              to={"/blog"}
+            >
               Blog
             </Link>
-            <Link className="text-lg font-medium hover:text-blue-300" to={"/about"}>
+            <Link
+              className="text-lg font-medium hover:text-blue-300"
+              to={"/about"}
+            >
               Haqida
             </Link>
-            <Link className="text-lg font-medium hover:text-blue-300" to={"/courses"}>
+            <Link
+              className="text-lg font-medium hover:text-blue-300"
+              to={"/courses"}
+            >
               Kurslar
             </Link>
-            <Link className="text-lg font-medium hover:text-blue-300" to={"/books"}>
+            <Link
+              className="text-lg font-medium hover:text-blue-300"
+              to={"/books"}
+            >
               Kitoblar
             </Link>
-            <Link className="text-lg font-medium hover:text-blue-300" to={"/shop"}>
+            <Link
+              className="text-lg font-medium hover:text-blue-300"
+              to={"/shop"}
+            >
               Do'kon
             </Link>
           </div>
@@ -39,7 +54,10 @@ export const Footer = () => {
                   alt="Telegram"
                 />
               </a>
-              <a href="https://www.instagram.com/themuallimahalumni/" target="_blank">
+              <a
+                href="https://www.instagram.com/themuallimahalumni/"
+                target="_blank"
+              >
                 <img
                   className="transition-transform duration-300 hover:scale-110"
                   src="insta.svg"
@@ -66,11 +84,18 @@ export const Footer = () => {
 
         <div className="flex flex-wrap items-center justify-between mt-16">
           <div className="text-sm text-gray-400">
-            <p className="mb-2">Copyright © 2021 - 2024 The Muallimah. Barcha huquqlar himoyalangan.</p>
+            <p className="mb-2">
+              Copyright © 2021 - 2024 The Muallimah. Barcha huquqlar
+              himoyalangan.
+            </p>
             <p className="mb-2">Maxfiylik Siyosati</p>
             <p className="mb-2">Kirish imkoniyati</p>
           </div>
-          <a href="https://t.me/Muxsinjon_Maxsudovich" className="text-gray-400 hover:text-blue-300">
+          <a
+            target="_blank"
+            href="https://t.me/Muxsinjon_Maxsudovich"
+            className="text-gray-400 hover:text-blue-300"
+          >
             Dasturchilar
           </a>
         </div>
