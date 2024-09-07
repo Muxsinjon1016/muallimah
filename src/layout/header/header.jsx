@@ -15,7 +15,7 @@ export const Header = () => {
 
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 z-30 transition-transform duration-500 shadow-md">
+      <div className="fixed top-0 left-0 right-0 z-30 transition-transform duration-500 bg-white shadow-md">
         <div className="container flex items-center justify-between px-10 lg:hidden">
           <img
             onClick={() => navigate("/")}
