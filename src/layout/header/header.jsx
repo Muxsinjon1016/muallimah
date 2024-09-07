@@ -30,10 +30,7 @@ export const Header = () => {
           {open && (
             <div className="fixed inset-0 z-40 flex justify-end bg-black bg-opacity-50">
               <div className="fixed top-0 right-0 h-full p-5 transition-transform duration-500 transform translate-x-0 bg-gray-100 shadow-lg w-80">
-                <button
-                  className="mb-5 text-2xl font-bold"
-                  onClick={onClose}
-                >
+                <button className="mb-5 text-2xl font-bold" onClick={onClose}>
                   &times;
                 </button>
                 <nav className="space-y-5">
