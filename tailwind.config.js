@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        fontFamily: ["Manrope", "sans-serif"],
+        secondFamily: ["Lobster", "cursive"],
+      },
       borderRadius: {
         6: "6px",
         12: "12px",
