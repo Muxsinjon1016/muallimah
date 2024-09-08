@@ -5,7 +5,6 @@ export const Book = () => {
     <div className="container mt-[87px]">
       <p className="text-4xl md:text-6xl text-left font-secondFamily text-[#ff4756] mb-20">
         The Muallimah’s Books
-        The Muallimah’s Books
       </p>
       <div className="w-full ml-auto mr-auto lg:flex gap-28 mb-">
         <div className="w-[394px] h-[523px] rounded-2xl bg-white">
