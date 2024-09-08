@@ -7,7 +7,8 @@ import About from "./pages/about/about-page";
 import Courses from "./pages/courses/courses-page";
 import Books from "./pages/books/books-page";
 import Shop from "./pages/shop/shop";
-import { AnimatePresence, motion } from "framer-motion"; 
+import { AnimatePresence, motion } from "framer-motion";
+
 function App() {
   const location = useLocation();
 
@@ -16,12 +17,54 @@ function App() {
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<MainLayout />}>
-            <Route index element={<PageWithAnimation><Home /></PageWithAnimation>} />
-            <Route path="/blog" element={<PageWithAnimation><Blog /></PageWithAnimation>} />
-            <Route path="/about" element={<PageWithAnimation><About /></PageWithAnimation>} />
-            <Route path="/courses" element={<PageWithAnimation><Courses /></PageWithAnimation>} />
-            <Route path="/books" element={<PageWithAnimation><Books /></PageWithAnimation>} />
-            <Route path="/shop" element={<PageWithAnimation><Shop /></PageWithAnimation>} />
+            <Route
+              index
+              element={
+                <PageWithAnimation>
+                  <Home />
+                </PageWithAnimation>
+              }
+            />
+            <Route
+              path="/blog"
+              element={
+                <PageWithAnimation>
+                  <Blog />
+                </PageWithAnimation>
+              }
+            />
+            <Route
+              path="/about"
+              element={
+                <PageWithAnimation>
+                  <About />
+                </PageWithAnimation>
+              }
+            />
+            <Route
+              path="/courses"
+              element={
+                <PageWithAnimation>
+                  <Courses />
+                </PageWithAnimation>
+              }
+            />
+            <Route
+              path="/books"
+              element={
+                <PageWithAnimation>
+                  <Books />
+                </PageWithAnimation>
+              }
+            />
+            <Route
+              path="/shop"
+              element={
+                <PageWithAnimation>
+                  <Shop />
+                </PageWithAnimation>
+              }
+            />
           </Route>
         </Routes>
       </AnimatePresence>
