@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "./components/banner/banner"; // Yangi komponent yo‘li
+import Banner from "./components/banner/banner";
 import { Amount } from "./components/amout/amout";
 import { Courses } from "./components/courses/courses";
 
