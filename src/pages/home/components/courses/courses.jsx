@@ -1,23 +1,14 @@
 import React from "react";
-import { useCources } from "../../services/useCources";
 
 export const Courses = () => {
-  const { data } = useCources();
-
-  console.log(data);
   return (
     <>
-      <div>
-        {data?.map((item) => {
-          return (
-            <>
-              <div key={item.id}>
-                <h2>{item.name}</h2>
-              </div>
-            </>
-          );
-        })}
-      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+        totam fugiat placeat odio rem vitae incidunt facilis esse. Dolorem vel
+        quibusdam veniam facere repellendus ipsam cumque voluptatem sed,
+        sapiente accusamus?
+      </p>
     </>
   );
 };
