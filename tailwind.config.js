@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        amountBg: "url('amountBg.svg')",
+      },
       fontFamily: {
         fontFamily: ["Manrope", "sans-serif"],
         secondFamily: ["Lobster", "cursive"],
