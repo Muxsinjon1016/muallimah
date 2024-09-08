@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 export const MainLayout = () => {
   return (
     <>
-      <header className="mb-[80px] lg:mb-[100px]">
+      <header className="mb-[70px] lg:mb-[100px]">
         <Header />
       </header>
       <main className="min-h-screen">
