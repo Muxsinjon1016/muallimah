@@ -34,14 +34,14 @@ const Banner = () => {
   };
 
   return (
-    <div className='relative bg-[#00235a] h-[559px] flex items-center justify-center'>
-      <p className="absolute top-0 left-0 w-full text-5xl text-center font-secondFamily text-white pt-[35px]">
+    <div className="relative bg-[#00235a] py-10 flex items-center justify-center">
+      <p className="absolute top-0 left-0 w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-secondFamily text-white pt-[20px] md:pt-[30px] lg:pt-[35px]">
         Free Online Language Courses
       </p>
 
-      <button onClick={prevSlide} className="absolute left-0 z-10 p-2 text-white">{"<"}</button>
+      <button onClick={prevSlide} className="absolute z-10 p-2 text-2xl text-white left-2 md:text-3xl lg:text-4xl">{"<"}</button>
 
-      <div className="relative w-full h-auto overflow-hidden">
+      <div className="relative w-full h-auto px-4 overflow-hidden md:px-8 lg:px-0">
         <AnimatePresence initial={false}>
           <motion.div
             key={bannerData[index].id}
@@ -51,25 +51,25 @@ const Banner = () => {
             transition={{ duration: 0.5 }}
             className="flex items-center justify-center w-full"
           >
-            <div className="w-[1100px] ml-auto mr-auto h-auto rounded-[10px] bg-white flex flex-col-reverse items-center justify-between text-center md:flex-row md:text-left p-6">
-              <div className='p-[44px]'>
-                <h1 className="text-4xl text-[#ff4756]">{bannerData[index].title}</h1>
-                <p className="w-[499px] md:h-24 h-auto text-base mt-[26px] mb-[26px] text-[#00235a]">
+            <div className="max-w-[1100px] mx-auto h-auto rounded-[10px] mt-10 bg-gray-50 flex flex-col-reverse md:flex-row items-center justify-between text-center md:text-left p-6">
+              <div className="p-[20px] md:p-[44px]">
+                <h1 className="text-2xl md:text-3xl lg:text-4xl text-[#ff4756]">{bannerData[index].title}</h1>
+                <p className="w-full md:w-[450px] lg:w-[499px] text-sm md:text-base mt-[15px] md:mt-[26px] mb-[15px] md:mb-[26px] text-[#00235a]">
                   {bannerData[index].text}
                 </p>
-                <div className="flex justify-center md:justify-start items-center w-[182px] relative gap-2.5 px-10 py-2 rounded-md bg-[#00235a] mx-auto md:mx-0">
-                  <button className="text-base font-medium text-center text-white">Learn free</button>
+                <div className="flex justify-center md:justify-start items-center w-full md:w-[182px] relative gap-2.5 px-6 py-2 rounded-md bg-[#00235a] mx-auto md:mx-0">
+                  <button className="text-sm font-medium text-center text-white md:text-base">Learn free</button>
                 </div>
               </div>
-              <div className='flex items-center justify-center mb-4 md:mb-0'>
-                <img src={bannerData[index].img} alt="banner" className='w-[300px] md:w-[600px] h-auto' />
+              <div className="flex items-center justify-center mb-4 md:mb-0">
+                <img src={bannerData[index].img} alt="banner" className="w-[200px] md:w-[300px] lg:w-[600px] h-auto" />
               </div>
             </div>
           </motion.div>
         </AnimatePresence>
       </div>
 
-      <button onClick={nextSlide} className="absolute right-0 z-10 p-2 text-white">{">"}</button>
+      <button onClick={nextSlide} className="absolute z-10 p-2 text-2xl text-white right-2 md:text-3xl lg:text-4xl">{">"}</button>
     </div>
   );
 };
