@@ -7,3 +7,17 @@
 body {
   font-family: "Manrope", sans-serif;
 }
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 1px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
