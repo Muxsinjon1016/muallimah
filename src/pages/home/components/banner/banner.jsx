@@ -35,7 +35,6 @@ const Banner = () => {
 
   return (
     <div className='relative bg-[#00235a] h-[559px] flex items-center justify-center'>
-      {/* Matnni tepaga joylash */}
       <p className="absolute top-0 left-0 w-full text-5xl text-center font-secondFamily text-white pt-[35px]">
         Free Online Language Courses
       </p>
