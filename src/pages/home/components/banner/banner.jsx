@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const bannerData = [
   {
@@ -58,16 +59,16 @@ const Banner = () => {
           >
             <div className="max-w-[1100px] mx-auto h-auto rounded-[10px] mt-10 bg-gray-50 flex flex-col-reverse md:flex-row items-center justify-between text-center md:text-left p-6">
               <div className="p-[20px] md:px-[44px] md:py-[30px]">
-                <h1 className="text-2xl md:text-3xl -mt-10 font-bold lg:text-5xl text-[#ff4756]">
+                <h1 className="text-2xl md:text-3xl font-secondFamily -mt-10 font-bold lg:text-5xl text-[#ff4756]">
                   {bannerData[index].title}
                 </h1>
                 <p className="w-full md:w-[450px] lg:w-[499px] text-sm md:text-base mt-[15px] md:mt-[26px] mb-[18px] md:mb-[56px] text-[#00235a]">
                   {bannerData[index].text}
                 </p>
-                <div className="flex justify-center md:justify-start items-center w-full md:w-[182px] relative gap-2.5 px-6 py-2 rounded-md bg-[#00235a] mx-auto md:mx-0">
-                  <button className="block mx-auto text-sm font-medium text-white md:text-base">
+                <div className="flex justify-center md:justify-start items-center w-full md:w-[182px] relative gap-2.5 px-6 py-2 rounded-md bg-[#00235a] mx-auto md:mx-0 hover:bg-gradient-to-l from-[#4d5ef6] to-[#f64d4d] transition-all duration-500">
+                  <Link to="/books" className="block mx-auto text-sm font-medium text-white md:text-base">
                     Learn free
-                  </button>
+                  </Link>
                 </div>
               </div>
               <div className="flex items-center justify-center mb-4 md:mb-0">

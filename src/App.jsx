@@ -3,7 +3,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { MainLayout } from "./layout/mainLayout/mainLayout";
 import Home from "./pages/home/home";
 import Blog from "./pages/blog/blog";
-import About from "./pages/about/about-page";
+import AboutPage from "./pages/aboutpage/about-page";
 import Courses from "./pages/courses/courses-page";
 import Books from "./pages/books/books-page";
 import Shop from "./pages/shop/shop";
@@ -37,7 +37,7 @@ function App() {
               path="/about"
               element={
                 <PageWithAnimation>
-                  <About />
+                  <AboutPage />
                 </PageWithAnimation>
               }
             />
@@ -50,7 +50,7 @@ function App() {
               }
             />
             <Route
-              path="/books"
+              path="/"
               element={
                 <PageWithAnimation>
                   <Books />
@@ -58,7 +58,7 @@ function App() {
               }
             />
             <Route
-              path="/shop"
+              path="/"
               element={
                 <PageWithAnimation>
                   <Shop />
