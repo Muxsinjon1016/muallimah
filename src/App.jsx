@@ -5,7 +5,7 @@ import Home from "./pages/home/home";
 import Blog from "./pages/blog/blog";
 import AboutPage from "./pages/aboutpage/about-page";
 import Courses from "./pages/courses/courses-page";
-import Books from "./pages/books/books-page";
+import Video from "./pages/video/video";
 import Shop from "./pages/shop/shop";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -50,10 +50,10 @@ function App() {
               }
             />
             <Route
-              path="/"
+              path="/video"
               element={
                 <PageWithAnimation>
-                  <Books />
+                  <Video />
                 </PageWithAnimation>
               }
             />

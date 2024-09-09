@@ -61,10 +61,10 @@ export const Header = () => {
             </NavLink>
             <NavLink
               className="block my-2 text-lg font-semibold border-b-4 border-transparent hover:border-blue-800"
-              to="/books"
+              to="/video"
               onClick={onClose}
             >
-              Books
+              Video
             </NavLink>
             <NavLink
               className="block my-2 text-lg font-semibold border-b-4 border-transparent hover:border-blue-800"
@@ -114,9 +114,9 @@ export const Header = () => {
             </NavLink>
             <NavLink
               className="px-2 pb-1 text-xl font-bold text-blue-900 transition-all duration-300 border-b-4 border-transparent rounded-12 hover:border-blue-800"
-              to="/books"
+              to="/video"
             >
-              Books
+              Video
             </NavLink>
             <NavLink
               className="px-2 pb-1 text-xl font-bold text-blue-900 transition-all duration-300 border-b-4 border-transparent rounded-12 hover:border-blue-800"

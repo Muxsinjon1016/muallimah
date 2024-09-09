@@ -32,9 +32,9 @@ export const Footer = () => {
             </Link>
             <Link
               className="text-lg font-medium hover:text-blue-300"
-              to={"/books"}
+              to={"/video"}
             >
-              Books
+              Video
             </Link>
             <Link
               className="text-lg font-medium hover:text-blue-300"
