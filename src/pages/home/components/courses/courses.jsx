@@ -19,14 +19,14 @@ const cardData = [
   { id: 7, title: "Conversational English", lessons: "120 lessons in total" },
 ];
 
-export const Courses = () => {
+export const Coursess = () => {
   return (
     <div className="container mb-12">
-      <h2 className="font-secondFamily text-red-600 text-3xl md:text-7xl mb-7">
+      <h2 className="text-3xl text-red-600 font-secondFamily md:text-7xl mb-7">
         Courses
       </h2>
       <motion.div
-        className="slider custom-scrollbar flex items-center gap-5 overflow-x-auto"
+        className="flex items-center gap-5 overflow-x-auto slider custom-scrollbar"
         initial="hidden"
         animate="visible"
         exit="exit"
@@ -50,10 +50,10 @@ export const Courses = () => {
               alt="img"
             />
             <div className="p-[15px] md:p-[25px]">
-              <h3 className="text-blue-900 font-semibold text-xl md:text-2xl line-clamp-2 mb-2">
+              <h3 className="mb-2 text-xl font-semibold text-blue-900 md:text-2xl line-clamp-2">
                 {card.title}
               </h3>
-              <p className="text-gray-500 line-clamp-4 text-xs md:text-sm">
+              <p className="text-xs text-gray-500 line-clamp-4 md:text-sm">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Necessitatibus molestias eaque suscipit obcaecati voluptas enim
                 iste quia hic, recusandae dolorum ipsa distinctio quae facilis
@@ -64,7 +64,7 @@ export const Courses = () => {
                   <p className="text-red-500 hover:text-red-600">
                     {card.lessons}
                   </p>
-                  <FaArrowRightLong className="text-gray-500 hover:text-black cursor-pointer" />
+                  <FaArrowRightLong className="text-gray-500 cursor-pointer hover:text-black" />
                 </div>
               </div>
             </div>
@@ -75,4 +75,4 @@ export const Courses = () => {
   );
 };
 
-export default Courses;
+export default Coursess;

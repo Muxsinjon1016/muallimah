@@ -6,6 +6,7 @@
 
 body {
   font-family: "Manrope", sans-serif;
+  background-color: #f6f6f6;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
