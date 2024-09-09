@@ -10,7 +10,7 @@ export const Footer = () => {
 
           <div className="flex flex-wrap items-center gap-10 mt-10">
             <Link className="text-lg font-medium hover:text-blue-300" to={"/"}>
-              Asosiy sahifa
+            Home
             </Link>
             <Link
               className="text-lg font-medium hover:text-blue-300"
@@ -22,30 +22,30 @@ export const Footer = () => {
               className="text-lg font-medium hover:text-blue-300"
               to={"/about"}
             >
-              Haqida
+              About
             </Link>
             <Link
               className="text-lg font-medium hover:text-blue-300"
               to={"/courses"}
             >
-              Kurslar
+              Courses
             </Link>
             <Link
               className="text-lg font-medium hover:text-blue-300"
               to={"/books"}
             >
-              Kitoblar
+              Books
             </Link>
             <Link
               className="text-lg font-medium hover:text-blue-300"
               to={"/shop"}
             >
-              Do'kon
+              Shop
             </Link>
           </div>
 
           <div className="mt-10">
-            <h3 className="mb-4 text-lg font-bold">Bizni kuzating</h3>
+            <h3 className="mb-4 text-lg font-bold">Follow us</h3>
             <div className="flex items-center gap-6">
               <a href="https://t.me/themuallimah" target="_blank">
                 <img
@@ -85,18 +85,25 @@ export const Footer = () => {
         <div className="flex flex-wrap items-center justify-between mt-16">
           <div className="text-sm text-gray-400">
             <p className="mb-2">
-              Copyright © 2021 - 2024 The Muallimah. Barcha huquqlar
-              himoyalangan.
+              Copyright © 2021 - 2024 The Muallimah. All rights reserved
+              protected.
             </p>
-            <p className="mb-2">Maxfiylik Siyosati</p>
-            <p className="mb-2">Kirish imkoniyati</p>
+            <p className="mb-2">Privacy Policy</p>
+            <p className="mb-2">Accessibility</p>
           </div>
           <a
             target="_blank"
             href="https://t.me/Muxsinjon_Maxsudovich"
             className="text-gray-400 hover:text-blue-300"
           >
-            Dasturchilar
+            Programmers
+          </a>
+          <a
+            target="_blank"
+            href="https://t.me/sodiqjon_lutfullayevich"
+            className="text-gray-400 hover:text-blue-300"
+          >
+            Developer
           </a>
         </div>
       </div>

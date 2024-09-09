@@ -27,11 +27,11 @@ const cardData = [
   },
 ];
 
-export const Book = () => {
+export const Shop_clouth = () => {
   return (
     <div className="container mb-12">
       <h2 className="text-3xl text-red-600 font-secondFamily md:text-7xl mb-7">
-        The Muallimah Books
+        Shop
       </h2>
       <motion.div
         className="flex items-center gap-5 overflow-x-auto justify-evenly justi slider custom-scrollbar whitespace-nowrap"

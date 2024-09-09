@@ -1,26 +1,24 @@
 import React from "react";
 import Banner from "./components/banner/banner";
 import { Amount } from "./components/amout/amout";
-import { Courses } from "./components/courses/courses";
-<<<<<<< HEAD
+import Coursess from "./components/courses/courses";
 import { About } from "./components/about/about";
-import { Book } from "./components/book/book";
-=======
 import Blog from "./components/blog/blog";
->>>>>>> 6cc04449c82e5cf5e681370c7748d803ca601d96
+import { Book } from "./components/book/book";
+import { Shop_clouth } from "./components/shop/clouth_shop";
+import Feedback from "./components/feedback/feedback";
 
 const Home = () => {
   return (
     <>
       <Banner />
       <Amount />
-      <Courses />
-<<<<<<< HEAD
+      <Coursess />
       <About/>
-      <Book/>
-=======
       <Blog />
->>>>>>> 6cc04449c82e5cf5e681370c7748d803ca601d96
+      <Book/>
+      <Shop_clouth/>
+      <Feedback />
     </>
   );
 };

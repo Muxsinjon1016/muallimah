@@ -36,7 +36,7 @@ export const Header = () => {
               to="/"
               onClick={onClose}
             >
-              Bosh sahifa
+              Home
             </NavLink>
             <NavLink
               className="block my-2 text-lg font-semibold border-b-4 border-transparent hover:border-blue-800"
@@ -50,35 +50,35 @@ export const Header = () => {
               to="/about"
               onClick={onClose}
             >
-              Haqida
+              About
             </NavLink>
             <NavLink
               className="block my-2 text-lg font-semibold border-b-4 border-transparent hover:border-blue-800"
               to="/courses"
               onClick={onClose}
             >
-              Kurslar
+              Courses
             </NavLink>
             <NavLink
               className="block my-2 text-lg font-semibold border-b-4 border-transparent hover:border-blue-800"
               to="/books"
               onClick={onClose}
             >
-              Kitoblar
+              Books
             </NavLink>
             <NavLink
               className="block my-2 text-lg font-semibold border-b-4 border-transparent hover:border-blue-800"
               to="/shop"
               onClick={onClose}
             >
-              Do'kon
+              Shop
             </NavLink>
             <div className="flex flex-wrap justify-center gap-2 mt-4">
               <button className="px-4 py-2 font-medium text-white bg-blue-800">
-                Tizimga kirish
+                LogIn
               </button>
               <button className="px-4 py-2 font-medium text-blue-800">
-                Ro'yxatdan o'tish
+              Sign up
               </button>
             </div>
           </div>
@@ -92,7 +92,7 @@ export const Header = () => {
               className="px-2 pb-1 text-xl font-bold text-blue-900 transition-all duration-300 border-b-4 border-transparent rounded-12 hover:border-blue-800"
               to="/"
             >
-              Bosh sahifa
+              Home
             </NavLink>
             <NavLink
               className="px-2 pb-1 text-xl font-bold text-blue-900 transition-all duration-300 border-b-4 border-transparent rounded-12 hover:border-blue-800"
@@ -104,28 +104,28 @@ export const Header = () => {
               className="px-2 pb-1 text-xl font-bold text-blue-900 transition-all duration-300 border-b-4 border-transparent rounded-12 hover:border-blue-800"
               to="/about"
             >
-              Haqida
+              About
             </NavLink>
             <NavLink
               className="px-2 pb-1 text-xl font-bold text-blue-900 transition-all duration-300 border-b-4 border-transparent rounded-12 hover:border-blue-800"
               to="/courses"
             >
-              Kurslar
+              Courses
             </NavLink>
             <NavLink
               className="px-2 pb-1 text-xl font-bold text-blue-900 transition-all duration-300 border-b-4 border-transparent rounded-12 hover:border-blue-800"
               to="/books"
             >
-              Kitoblar
+              Books
             </NavLink>
             <NavLink
               className="px-2 pb-1 text-xl font-bold text-blue-900 transition-all duration-300 border-b-4 border-transparent rounded-12 hover:border-blue-800"
               to="/shop"
             >
-              Do'kon
+              Shop
             </NavLink>
             <button className="px-6 py-3 text-lg font-medium text-white bg-red-600 rounded-full">
-              Ro'yxatdan o'tish
+              Sign Up
             </button>
           </div>
         </div>
