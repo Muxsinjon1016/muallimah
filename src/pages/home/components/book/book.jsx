@@ -29,7 +29,7 @@ const cardData = [
 
 export const Book = () => {
   return (
-    <div className="container mb-12">
+    <div id="shop" className="container mb-12">
       <h2 className="text-3xl text-red-600 font-secondFamily md:text-7xl mb-7">
         The Muallimah Books
       </h2>

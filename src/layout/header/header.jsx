@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export const Header = () => {
   const [open, setOpen] = React.useState(false);
@@ -32,33 +32,33 @@ export const Header = () => {
               X {/* Replace 'X' with a close icon if needed */}
             </button>
             <NavLink
+              to={"/"}
               className="block my-2 text-lg font-semibold border-b-4 border-transparent hover:border-blue-800"
-              to="/"
               onClick={onClose}
             >
               Home
             </NavLink>
-            <NavLink
+            <a
               className="block my-2 text-lg font-semibold border-b-4 border-transparent hover:border-blue-800"
-              to="/blog"
+              href="#blog"
               onClick={onClose}
             >
               Blog
-            </NavLink>
-            <NavLink
+            </a>
+            <a
               className="block my-2 text-lg font-semibold border-b-4 border-transparent hover:border-blue-800"
-              to="/about"
+              href="#about"
               onClick={onClose}
             >
               About
-            </NavLink>
-            <NavLink
+            </a>
+            <a
               className="block my-2 text-lg font-semibold border-b-4 border-transparent hover:border-blue-800"
-              to="/courses"
+              href="#cources"
               onClick={onClose}
             >
               Courses
-            </NavLink>
+            </a>
             <NavLink
               className="block my-2 text-lg font-semibold border-b-4 border-transparent hover:border-blue-800"
               to="/video"
@@ -66,19 +66,19 @@ export const Header = () => {
             >
               Video
             </NavLink>
-            <NavLink
+            <a
               className="block my-2 text-lg font-semibold border-b-4 border-transparent hover:border-blue-800"
-              to="/shop"
+              href="#shop"
               onClick={onClose}
             >
               Shop
-            </NavLink>
+            </a>
             <div className="flex flex-wrap justify-center gap-2 mt-4">
               <button className="px-4 py-2 font-medium text-white bg-blue-800">
                 LogIn
               </button>
               <button className="px-4 py-2 font-medium text-blue-800">
-              Sign up
+                Sign up
               </button>
             </div>
           </div>
@@ -94,36 +94,36 @@ export const Header = () => {
             >
               Home
             </NavLink>
-            <NavLink
+            <a
               className="px-2 pb-1 text-xl font-bold text-blue-900 transition-all duration-300 border-b-4 border-transparent rounded-12 hover:border-blue-800"
-              to="/blog"
+              href="#blog"
             >
               Blog
-            </NavLink>
-            <NavLink
+            </a>
+            <a
               className="px-2 pb-1 text-xl font-bold text-blue-900 transition-all duration-300 border-b-4 border-transparent rounded-12 hover:border-blue-800"
-              to="/about"
+              href="#about"
             >
               About
-            </NavLink>
-            <NavLink
+            </a>
+            <a
               className="px-2 pb-1 text-xl font-bold text-blue-900 transition-all duration-300 border-b-4 border-transparent rounded-12 hover:border-blue-800"
-              to="/courses"
+              href="#cources"
             >
               Courses
-            </NavLink>
+            </a>
             <NavLink
               className="px-2 pb-1 text-xl font-bold text-blue-900 transition-all duration-300 border-b-4 border-transparent rounded-12 hover:border-blue-800"
               to="/video"
             >
               Video
             </NavLink>
-            <NavLink
+            <a
               className="px-2 pb-1 text-xl font-bold text-blue-900 transition-all duration-300 border-b-4 border-transparent rounded-12 hover:border-blue-800"
-              to="/shop"
+              href="#shop"
             >
               Shop
-            </NavLink>
+            </a>
             <button className="px-6 py-3 text-lg font-medium text-white bg-red-600 rounded-full">
               Sign Up
             </button>

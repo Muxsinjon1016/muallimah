@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const About = () => {
   return (
-    <div className="container mt-[173px]">
+    <div id="about" className="container mt-[173px]">
       <p className="text-4xl md:text-6xl text-left font-secondFamily text-[#ff4756] mb-20">
         About The Muallimah
       </p>
@@ -15,7 +15,10 @@ export const About = () => {
             tutor/teacher of EuroAsia, who has more than 15 years of teaching
             experience in Uzbekistan and in EuroAsia.
           </p>
-          <Link to="/about" className="sm:px-10 lg:mt-[54px] bor text-base font-medium text-white px-[30px] py-2 rounded-md bg-[#00235a] hover:bg-gradient-to-l from-[#4d5ef6] to-[#f64d4d] transition-all duration-500">
+          <Link
+            to="/about"
+            className="sm:px-10 lg:mt-[54px] bor text-base font-medium text-white px-[30px] py-2 rounded-md bg-[#00235a] hover:bg-gradient-to-l from-[#4d5ef6] to-[#f64d4d] transition-all duration-500"
+          >
             Learn more
           </Link>
         </div>

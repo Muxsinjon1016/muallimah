@@ -21,7 +21,7 @@ const cardData = [
 
 export const Coursess = () => {
   return (
-    <div className="container mb-12">
+    <div id="cources" className="container mb-12">
       <h2 className="text-3xl text-red-600 font-secondFamily md:text-7xl mb-7">
         Courses
       </h2>

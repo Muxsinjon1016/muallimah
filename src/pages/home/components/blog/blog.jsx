@@ -104,7 +104,7 @@ const categoryData = [
 
 export const Blog = () => {
   return (
-    <div className="container mb-12">
+    <div id="blog" className="container mb-12">
       <h2 className="font-secondFamily text-red-600 text-3xl md:text-7xl mb-7">
         Blog
       </h2>
