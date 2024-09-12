@@ -14,7 +14,6 @@ export const Blog = () => {
   const { data } = useBlogCategories();
   const { data: blogPosts } = useBlogPosts();
 
-  console.log(blogPosts);
 
   return (
     <div id="blog" className="container mb-12">

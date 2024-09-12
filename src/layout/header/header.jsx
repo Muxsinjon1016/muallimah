@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 export const Header = () => {
   const [open, setOpen] = React.useState(false);
@@ -19,7 +19,13 @@ export const Header = () => {
       <div className="fixed top-0 left-0 right-0 z-30 bg-white">
         {/* Mobile Header */}
         <div className="flex container items-center justify-between py-2.5 px-4 lg:hidden">
-          <img onClick={() => navigate("/")} src="logoMobile.svg" alt="logo" />
+          <Link to={"/"}>
+            <img
+              onClick={() => navigate("/")}
+              src="logoMobile.svg"
+              alt="logo"
+            />
+          </Link>
           <button type="button" onClick={showDrawer}>
             <img src="hamburger.svg" alt="menu" />
           </button>
@@ -86,7 +92,13 @@ export const Header = () => {
 
         {/* Desktop Header */}
         <div className="hidden container lg:flex items-center justify-between py-2.5 px-4">
-          <img onClick={() => navigate("/")} src="logoDesctop.svg" alt="logo" />
+          <Link to="/">
+            <img
+              onClick={() => navigate("/")}
+              src="logoDesctop.svg"
+              alt="logo"
+            />
+          </Link>
           <div className="flex items-center gap-10">
             <NavLink
               className="px-2 pb-1 text-xl font-bold text-blue-900 transition-all duration-300 border-b-4 border-transparent rounded-12 hover:border-blue-800"

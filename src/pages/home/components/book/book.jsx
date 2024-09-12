@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useBooks } from "../../services/useBooks";
 
 const cardVariants = {
   hidden: { opacity: 0, x: -100 },
@@ -7,25 +8,9 @@ const cardVariants = {
   exit: { opacity: 0, x: 100 },
 };
 
-const cardData = [
-  {
-    id: 3,
-    title: "Ways to learn foreign languages faster",
-    lessons: "February 18, 2021",
-  },
-  {
-    id: 3,
-    title: "Ways to learn foreign languages faster",
-    lessons: "February 18, 2021",
-  },
-  {
-    id: 3,
-    title: "Ways to learn foreign languages faster",
-    lessons: "February 18, 2021",
-  },
-];
-
 export const Book = () => {
+  const { data } = useBooks();
+
   return (
     <div id="shop" className="container mb-12">
       <h2 className="text-3xl text-red-600 font-secondFamily md:text-7xl mb-7">
@@ -43,24 +28,24 @@ export const Book = () => {
         }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
       >
-        {cardData.map((card) => (
+        {data?.Books?.map((card) => (
           <motion.div
-            key={card.id}
+            key={card.Id}
             className="inline-block w-[220px] bg-white shadow-lg hover:shadow-2xl transition-all duration-300 md:w-[258px] rounded-6 border-2 relative mb-10"
             variants={cardVariants}
             transition={{ duration: 0.5 }}
           >
             <img
               className="w-[220px] md:w-[288px]"
-              src="bannerImg.png"
-              alt="img"
+              src={card.PictureUrls[0]}
+              alt={card.Title}
             />
             <div className="p-[15px] md:p-[25px]">
               <h3 className="mb-2 text-xl font-semibold text-blue-900 md:text-2xl line-clamp-2">
-                {card.title}
+                {card.Title}
               </h3>
               <p className="text-sm text-center text-gray-500 line-clamp-4 md:text-sm">
-                25 000 sum
+                {card.Price} sum
               </p>
             </div>
           </motion.div>
