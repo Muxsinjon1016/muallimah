@@ -1,7 +1,5 @@
 import React from "react";
-import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
-import { nanoid } from "nanoid";
 
 const cardVariants = {
   hidden: { opacity: 0, x: -100 },
