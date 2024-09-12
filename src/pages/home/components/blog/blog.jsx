@@ -1,7 +1,8 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
-import { nanoid } from "nanoid";
+import { useBlogCategories } from "../../services/useBlogCategory";
+import { useBlogPosts } from "../../services/useBlogPosts";
 
 const cardVariants = {
   hidden: { opacity: 0, x: -100 },
@@ -9,100 +10,12 @@ const cardVariants = {
   exit: { opacity: 0, x: 100 },
 };
 
-const cardData = [
-  {
-    id: 3,
-    title: "Ways to learn foreign languages faster",
-    lessons: "February 18, 2021",
-  },
-  {
-    id: 3,
-    title: "Ways to learn foreign languages faster",
-    lessons: "February 18, 2021",
-  },
-  {
-    id: 3,
-    title: "Ways to learn foreign languages faster",
-    lessons: "February 18, 2021",
-  },
-  {
-    id: 3,
-    title: "Ways to learn foreign languages faster",
-    lessons: "February 18, 2021",
-  },
-  {
-    id: 3,
-    title: "Ways to learn foreign languages faster",
-    lessons: "February 18, 2021",
-  },
-  {
-    id: 3,
-    title: "Ways to learn foreign languages faster",
-    lessons: "February 18, 2021",
-  },
-  {
-    id: 3,
-    title: "Ways to learn foreign languages faster",
-    lessons: "February 18, 2021",
-  },
-  {
-    id: 3,
-    title: "Ways to learn foreign languages faster",
-    lessons: "February 18, 2021",
-  },
-  {
-    id: 3,
-    title: "Ways to learn foreign languages faster",
-    lessons: "February 18, 2021",
-  },
-  {
-    id: 3,
-    title: "Ways to learn foreign languages faster",
-    lessons: "February 18, 2021",
-  },
-  {
-    id: 3,
-    title: "Ways to learn foreign languages faster",
-    lessons: "February 18, 2021",
-  },
-  {
-    id: 3,
-    title: "Ways to learn foreign languages faster",
-    lessons: "February 18, 2021",
-  },
-];
-
-const categoryData = [
-  { id: nanoid(), name: "All posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-  { id: nanoid(), name: "Other posts" },
-];
-
 export const Blog = () => {
+  const { data } = useBlogCategories();
+  const { data: blogPosts } = useBlogPosts();
+
+  console.log(blogPosts);
+
   return (
     <div id="blog" className="container mb-12">
       <h2 className="font-secondFamily text-red-600 text-3xl md:text-7xl mb-7">
@@ -121,7 +34,7 @@ export const Blog = () => {
         }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
       >
-        {categoryData.map((category) => (
+        {data?.categories?.map((category) => (
           <motion.div
             key={category.id}
             variants={cardVariants}
@@ -133,6 +46,7 @@ export const Blog = () => {
           </motion.div>
         ))}
       </motion.div>
+
       {/* cards */}
       <motion.div
         className="slider custom-scrollbar flex items-center gap-5 overflow-x-auto whitespace-nowrap"
@@ -146,7 +60,7 @@ export const Blog = () => {
         }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
       >
-        {cardData.map((card) => (
+        {blogPosts?.map((card) => (
           <motion.div
             key={card.id}
             className="inline-block w-[220px] shadow-lg hover:shadow-2xl transition-all duration-300 md:w-[258px] md:h-[400px] h-[339px] rounded-6 border-2 relative mb-10"
