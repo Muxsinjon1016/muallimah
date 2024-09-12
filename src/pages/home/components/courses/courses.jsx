@@ -13,8 +13,6 @@ export const Coursess = () => {
   const { data: coursesData } = useCources();
   const { data: categoryData } = useCourceCategory(); // Fixed line here
 
-  console.log(categoryData);
-
   return (
     <div id="cources" className="container mb-12">
       <h2 className="text-3xl text-red-600 font-secondFamily md:text-7xl mb-7">
@@ -22,7 +20,7 @@ export const Coursess = () => {
       </h2>
 
       {/* categories */}
-      <motion.div
+      {/* <motion.div
         className="slider-custom custom-scrollbar mb-10 flex items-center gap-5 overflow-x-auto whitespace-nowrap"
         initial="hidden"
         animate="visible"
@@ -47,7 +45,7 @@ export const Coursess = () => {
             </div>
           </motion.div>
         ))}
-      </motion.div>
+      </motion.div> */}
 
       {/* Cource cards */}
       <motion.div

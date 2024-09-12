@@ -1,11 +1,11 @@
 import { request } from "../../../config/request";
 import { useQuery } from "@tanstack/react-query";
 
-export const useCources = () => {
+export const useBlogPosts = () => {
   return useQuery({
-    queryKey: ["getCources"],
-    queryFn: () => request.get("/course/list").then((res) => res.data),
+    queryKey: ["getBlogPosts"],
+    queryFn: () => request.get("/posts").then((res) => res.data),
   });
 };
 
-export default useCources;
+export default useBlogPosts;
