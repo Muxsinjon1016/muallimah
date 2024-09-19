@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         amountBg: "url('amountBg.svg')",
+        mainBg: "url('mainBg.svg')",
       },
       fontFamily: {
         fontFamily: ["Manrope", "sans-serif"],
