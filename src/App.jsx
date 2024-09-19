@@ -2,12 +2,15 @@ import { React } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { MainLayout } from "./layout/mainLayout/mainLayout";
 import Home from "./pages/home/home";
-import Blog from "./pages/blog/blog";
-import AboutPage from "./pages/aboutpage/about-page";
-import Courses from "./pages/courses/courses-page";
 import Video from "./pages/video/video";
-import Shop from "./pages/shop/shop";
 import { AnimatePresence, motion } from "framer-motion";
+import NotFount from "./layout/notFount";
+import UserLayout from "./pages/userPanel/userLayout";
+import UserHome from "./pages/userPanel/components/userHome";
+import UserCources from "./pages/userPanel/components/userCources";
+import UserCertificates from "./pages/userPanel/components/userCertificates";
+import UserSettings from "./pages/userPanel/components/userSettings";
+import UserPayment from "./pages/userPanel/components/userPayment";
 
 function App() {
   const location = useLocation();
@@ -26,30 +29,6 @@ function App() {
               }
             />
             <Route
-              path="/blog"
-              element={
-                <PageWithAnimation>
-                  <Blog />
-                </PageWithAnimation>
-              }
-            />
-            <Route
-              path="/about"
-              element={
-                <PageWithAnimation>
-                  <AboutPage />
-                </PageWithAnimation>
-              }
-            />
-            <Route
-              path="/courses"
-              element={
-                <PageWithAnimation>
-                  <Courses />
-                </PageWithAnimation>
-              }
-            />
-            <Route
               path="/video"
               element={
                 <PageWithAnimation>
@@ -57,15 +36,15 @@ function App() {
                 </PageWithAnimation>
               }
             />
-            <Route
-              path="/"
-              element={
-                <PageWithAnimation>
-                  <Shop />
-                </PageWithAnimation>
-              }
-            />
           </Route>
+          <Route path="/userLayout" element={<UserLayout />}>
+            <Route index element={<UserHome />} />
+            <Route path="userCources" element={<UserCources />} />
+            <Route path="userCertificates" element={<UserCertificates />} />
+            <Route path="userPayment" element={<UserPayment />} />
+            <Route path="userSettings" element={<UserSettings />} />
+          </Route>
+          <Route path="*" element={<NotFount />} />
         </Routes>
       </AnimatePresence>
     </>
