@@ -10,7 +10,7 @@ export const Footer = () => {
 
           <div className="flex flex-wrap items-center gap-10 mt-10">
             <Link className="text-lg font-medium hover:text-blue-300" to={"/"}>
-            Home
+              Home
             </Link>
             <Link
               className="text-lg font-medium hover:text-blue-300"
@@ -107,6 +107,17 @@ export const Footer = () => {
           </a>
         </div>
       </div>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel distinctio
+      doloribus obcaecati atque cum tempore, eveniet sint vitae quae nemo iure
+      ad quaerat ut, dolorum labore. Animi, tempore. Provident, at. Deserunt
+      sequi animi cum praesentium unde exercitationem eos, nihil perspiciatis
+      blanditiis doloribus. Error, earum. Nesciunt vel repellendus laudantium
+      exercitationem quibusdam corporis ipsa libero quia nisi totam, ut qui
+      ducimus temporibus eaque deserunt veniam facere, dolores architecto
+      aperiam omnis doloribus, illum sunt nobis. Sunt, laboriosam excepturi
+      vitae eligendi similique quibusdam rem adipisci fuga natus nisi autem
+      reiciendis. Recusandae aspernatur nulla aliquid velit accusantium! Modi
+      impedit eos eligendi officiis natus enim aut.
     </footer>
   );
 };
